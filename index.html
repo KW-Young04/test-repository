@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>테스트용 레포</title>
-    <h1>테스트</h1>
-    <h2>커밋푸시테스트</h2>
   </head>
-  <body></body>
+  <body>
+    <!-- ❌ WCAG 1.4.3 (명도 대비): 배경색과 글자색이 같아 저시력자가 식별할 수 없는 텍스트 -->
+    <p style="color: #ffffff; background-color: #ffffff;">읽을 수 없는 안내 문구입니다.</p>
+
+    <!-- ❌ WCAG 4.1.2 (이름, 역할, 값):튼(button) 대신 div를 사용하여 스크린리더가 상호작용 가능한 요소로 인식하지 못함 -->
+    <div onclick="alert('click')">여기를 누르세요</div>
+  </body>
 </html>
